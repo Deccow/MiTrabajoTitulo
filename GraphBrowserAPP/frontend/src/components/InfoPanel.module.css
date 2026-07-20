@@ -1,0 +1,106 @@
+.panel {
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.empty {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 7px;
+  border-radius: 4px;
+  background: var(--bg-panel-raised);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+}
+
+.badge.hub {
+  color: #b3a6ff;
+  border-color: var(--accent-dim);
+}
+
+.lang {
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.label {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+.connections {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.connTitle {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-dim);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.connList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.connItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--bg-panel-raised);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.connItem:hover {
+  border-color: var(--accent);
+}
+
+.connRelation {
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.connTarget {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.connLang {
+  font-size: 10px;
+  color: var(--text-dim);
+}

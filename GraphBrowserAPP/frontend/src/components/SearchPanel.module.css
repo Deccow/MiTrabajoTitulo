@@ -1,0 +1,115 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inputWrap {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-panel-raised);
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.input:focus {
+  border-color: var(--accent);
+}
+
+.input:disabled {
+  opacity: 0.6;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.suggestion {
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.suggestion:hover {
+  background: var(--accent-dim);
+}
+
+.hopsRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hopsLabel {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.hopsVal {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.slider {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.hopsTicks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--text-dim);
+  padding: 0 2px;
+}
+
+.tickActive {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.tick {
+  color: var(--text-dim);
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

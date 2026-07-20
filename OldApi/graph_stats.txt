@@ -1,0 +1,2 @@
+Nodes with only 1 connection: 3020 (18.7%)
+Average degree: 5.96

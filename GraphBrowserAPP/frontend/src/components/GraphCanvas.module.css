@@ -1,0 +1,28 @@
+.svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+}
+
+.edge {
+  pointer-events: none;
+}
+
+.edgeLabel {
+  font-size: 9px;
+  fill: var(--text-dim);
+  pointer-events: none;
+  user-select: none;
+}
+
+.nodeGroup {
+  user-select: none;
+}
+
+.nodeLabel {
+  font-size: 10px;
+  fill: var(--text);
+  pointer-events: none;
+  user-select: none;
+}
